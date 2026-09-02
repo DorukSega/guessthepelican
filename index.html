@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Can you match the pelican on a bicycle to the AI model that drew it?"
+    />
+    <meta name="theme-color" content="#f4eee2" />
+    <title>Guess the Pelican</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Guess the Pelican home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-wheel brand-wheel--left"></span>
+            <span class="brand-wheel brand-wheel--right"></span>
+            <span class="brand-bird">P</span>
+          </span>
+          <span>
+            <span class="brand-name">Guess the Pelican</span>
+            <span class="brand-edition">LLM FIELD TEST · NO. 01</span>
+          </span>
+        </a>
+        <div class="header-actions">
+          <button class="icon-button" id="how-to-button" type="button" aria-haspopup="dialog">
+            <span aria-hidden="true">?</span>
+            <span class="sr-only">How to play</span>
+          </button>
+          <div class="best-score" aria-label="Personal best score">
+            <span class="best-score__label">Personal best</span>
+            <span class="best-score__value"><span id="best-score">0</span> pts</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="game" id="game-screen" aria-labelledby="question-heading">
+          <div class="game-meta">
+            <div class="round-count">
+              <span>Specimen</span>
+              <strong><span id="round-current">01</span> / <span id="round-total">10</span></strong>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <span id="progress-bar"></span>
+            </div>
+            <div class="score-count">
+              <span>Score</span>
+              <strong id="score">0000</strong>
+            </div>
+          </div>
+
+          <div class="question-block">
+            <p class="eyebrow">Identify the artist</p>
+            <h1 id="question-heading">
+              Which pelican was drawn by
+              <span class="model-name" id="model-name">GPT-4o</span><span class="question-mark">?</span>
+            </h1>
+            <p class="question-hint">Three birds. One model. Trust the wonky wheels.</p>
+          </div>
+
+          <div class="choices" id="choices" aria-label="Pelican choices"></div>
+
+          <div class="game-footer">
+            <div class="streak" id="streak-wrap" aria-label="Current streak">
+              <span class="streak-icon" aria-hidden="true">↗</span>
+              <span><strong id="streak">0</strong> streak</span>
+            </div>
+            <p class="keyboard-hint"><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> to pick</p>
+            <button class="next-button" id="next-button" type="button" hidden>
+              Next bird <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <p class="sr-only" id="live-result" aria-live="polite"></p>
+        </section>
+
+        <section class="bonus" id="bonus-screen" aria-labelledby="bonus-heading" hidden>
+          <div class="bonus-meta">
+            <div>
+              <span>Final specimen</span>
+              <strong>Bonus round</strong>
+            </div>
+            <div class="bonus-score-count">
+              <span>Score</span>
+              <strong id="bonus-score">0000</strong>
+            </div>
+          </div>
+
+          <div class="question-block bonus-question">
+            <p class="eyebrow">Reasoning line-up · 300 points possible</p>
+            <h1 id="bonus-heading" tabindex="-1">
+              Match the <span class="model-name" id="bonus-model">Claude Opus 4.8</span>
+              pelicans to their effort levels.
+            </h1>
+            <p class="question-hint">One model, three reasoning settings. Use each effort exactly once.</p>
+          </div>
+
+          <form id="bonus-form">
+            <div class="bonus-choices" id="bonus-choices" aria-label="Reasoning effort matches"></div>
+            <div class="bonus-actions">
+              <p class="bonus-status" id="bonus-status" role="status"></p>
+              <button class="primary-button" id="bonus-submit" type="submit">Lock in matches</button>
+              <button class="primary-button" id="bonus-results-button" type="button" hidden>See results →</button>
+            </div>
+          </form>
+          <p class="sr-only" id="bonus-live" aria-live="polite"></p>
+        </section>
+
+        <section class="results" id="results-screen" aria-labelledby="results-heading" hidden>
+          <div class="results-card">
+            <p class="eyebrow">Field notes complete</p>
+            <div class="results-stamp" id="results-grade" aria-hidden="true">SHARP EYE</div>
+            <h1 id="results-heading">You know your birds.</h1>
+            <p class="results-copy" id="results-copy"></p>
+            <div class="results-scoreline">
+              <div>
+                <span>Final score</span>
+                <strong id="final-score">0000</strong>
+              </div>
+              <div>
+                <span>Correct</span>
+                <strong><span id="correct-count">0</span> / <span id="final-total">10</span></strong>
+              </div>
+              <div>
+                <span>Bonus</span>
+                <strong><span id="final-bonus">0</span> / <span id="final-bonus-total">3</span></strong>
+              </div>
+              <div>
+                <span>Best streak</span>
+                <strong id="final-streak">0</strong>
+              </div>
+            </div>
+            <div class="results-actions">
+              <button class="primary-button" id="play-again-button" type="button">Play again ↻</button>
+              <button class="secondary-button" id="share-button" type="button">Copy result</button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Using model-generated vectors collected in
+          <a href="https://simonwillison.net/tags/pelican-riding-a-bicycle/" target="_blank" rel="noreferrer">Simon Willison’s pelican archive</a>.
+        </p>
+      </footer>
+    </div>
+
+    <dialog class="how-to" id="how-to-dialog" aria-labelledby="how-to-title">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">Field guide</p>
+      <h2 id="how-to-title">How to play</h2>
+      <ol>
+        <li>We name an AI model.</li>
+        <li>You inspect three pelicans on bicycles.</li>
+        <li>Pick the illustration that model actually generated.</li>
+        <li>Match three same-model outputs to their reasoning efforts in the final bonus round.</li>
+      </ol>
+      <p>There are 10 regular specimens per game, followed by one bonus match. Correct answers earn 100 points, plus a growing streak bonus.</p>
+      <button class="primary-button" id="dialog-got-it" type="button">Got it</button>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="A stylized pelican riding a bicycle on a road">
+  <title>Pelican Riding a Bicycle</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d7f0ff"/>
+      <stop offset="1" stop-color="#f8feff"/>
+    </linearGradient>
+
+    <linearGradient id="bodyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e5edf6"/>
+    </linearGradient>
+
+    <linearGradient id="wingGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fbff"/>
+      <stop offset="1" stop-color="#d6e3f1"/>
+    </linearGradient>
+
+    <linearGradient id="pouchGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#f28f3b"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff3b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <circle cx="676" cy="96" r="92" fill="url(#sunGlow)"/>
+  <circle cx="676" cy="96" r="34" fill="#ffe066"/>
+
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="130" cy="104" rx="40" ry="22"/>
+    <ellipse cx="164" cy="94" rx="30" ry="18"/>
+    <ellipse cx="99" cy="96" rx="24" ry="15"/>
+    <ellipse cx="596" cy="72" rx="32" ry="18"/>
+    <ellipse cx="625" cy="64" rx="24" ry="14"/>
+    <ellipse cx="568" cy="66" rx="20" ry="12"/>
+  </g>
+
+  <rect x="0" y="448" width="800" height="52" fill="#98a6b5"/>
+  <rect x="0" y="448" width="800" height="6" fill="#7d8c9b"/>
+  <line x1="20" y1="476" x2="780" y2="476" stroke="#eef4f8" stroke-width="6" stroke-linecap="round" stroke-dasharray="42 30" opacity="0.8"/>
+
+  <ellipse cx="410" cy="450" rx="285" ry="15" fill="#000000" opacity="0.12"/>
+
+  <g stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.75">
+    <line x1="70" y1="286" x2="150" y2="286"/>
+    <line x1="46" y1="328" x2="126" y2="328"/>
+    <line x1="84" y1="370" x2="164" y2="370"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g id="bicycle">
+    <g opacity="0.85" stroke="#b9c6d5" stroke-width="2">
+      <g transform="translate(250,370)">
+        <line x1="-58" y1="0" x2="58" y2="0"/>
+        <line x1="0" y1="-58" x2="0" y2="58"/>
+        <line x1="-41" y1="-41" x2="41" y2="41"/>
+        <line x1="-41" y1="41" x2="41" y2="-41"/>
+      </g>
+      <g transform="translate(570,370)">
+        <line x1="-58" y1="0" x2="58" y2="0"/>
+        <line x1="0" y1="-58" x2="0" y2="58"/>
+        <line x1="-41" y1="-41" x2="41" y2="41"/>
+        <line x1="-41" y1="41" x2="41" y2="-41"/>
+      </g>
+    </g>
+
+    <circle cx="250" cy="370" r="78" fill="none" stroke="#333a44" stroke-width="14"/>
+    <circle cx="250" cy="370" r="60" fill="none" stroke="#e7edf4" stroke-width="6"/>
+    <circle cx="250" cy="370" r="9" fill="#8d99a8"/>
+
+    <circle cx="570" cy="370" r="78" fill="none" stroke="#333a44" stroke-width="14"/>
+    <circle cx="570" cy="370" r="60" fill="none" stroke="#e7edf4" stroke-width="6"/>
+    <circle cx="570" cy="370" r="9" fill="#8d99a8"/>
+
+    <g fill="none" stroke="#e8503f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M250 370 L410 372 L340 262 Z"/>
+      <path d="M340 262 L520 270"/>
+      <path d="M520 270 L410 372"/>
+      <path d="M520 270 L570 370"/>
+    </g>
+
+    <g stroke="#39414d" stroke-width="10" stroke-linecap="round" fill="none">
+      <path d="M340 262 L336 246"/>
+      <path d="M520 270 L520 242"/>
+    </g>
+
+    <path d="M314 246 Q342 234 372 247 Q342 260 314 246 Z" fill="#39414d"/>
+
+    <path d="M496 232 Q520 216 546 232 L566 248" fill="none" stroke="#39414d" stroke-width="8" stroke-linecap="round"/>
+    <line x1="546" y1="232" x2="566" y2="248" stroke="#f4a259" stroke-width="12" stroke-linecap="round"/>
+
+    <g fill="none" stroke="#8d99a8" stroke-width="5">
+      <path d="M410 350 L250 360"/>
+      <path d="M250 380 L410 392"/>
+    </g>
+
+    <circle cx="410" cy="372" r="22" fill="none" stroke="#b6c1cd" stroke-width="7"/>
+    <circle cx="410" cy="372" r="6" fill="#6d7885"/>
+    <circle cx="250" cy="370" r="10" fill="none" stroke="#b6c1cd" stroke-width="5"/>
+
+    <line x1="410" y1="372" x2="438" y2="393" stroke="#6d7885" stroke-width="9" stroke-linecap="round"/>
+    <line x1="428" y1="399" x2="452" y2="388" stroke="#333a44" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <path d="M244 214 L162 188 L206 226 L150 238 L214 262 L170 282 L252 276 Z"
+          fill="#dbe6f2" stroke="#b6c6d8" stroke-width="5" stroke-linejoin="round"/>
+
+    <ellipse cx="330" cy="238" rx="88" ry="56" transform="rotate(-8 330 238)"
+             fill="url(#bodyGradient)" stroke="#c6d2e0" stroke-width="5"/>
+
+    <path d="M266 230 C306 194, 408 200, 520 244 C494 288, 402 300, 328 285 C285 277, 251 256, 266 230 Z"
+          fill="url(#wingGradient)" stroke="#b6c6d8" stroke-width="4"/>
+
+    <g fill="none" stroke="#b8c8db" stroke-width="4" stroke-linecap="round">
+      <path d="M330 232 C374 228, 420 236, 472 250"/>
+      <path d="M300 250 C356 244, 412 252, 466 266"/>
+      <path d="M292 266 C348 262, 404 270, 452 282"/>
+    </g>
+
+    <path d="M344 214 C374 168, 410 134, 456 130" fill="none" stroke="#c6d2e0" stroke-width="52" stroke-linecap="round"/>
+    <path d="M344 214 C374 168, 410 134, 456 130" fill="none" stroke="url(#bodyGradient)" stroke-width="44" stroke-linecap="round"/>
+
+    <path d="M492 124 C540 121, 594 137, 634 157 C607 173, 542 170, 498 162 Z"
+          fill="#ffc94d" stroke="#e79a25" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M500 158 C552 169, 600 169, 630 158 C621 199, 566 212, 518 199 C498 192, 492 171, 500 158 Z"
+          fill="url(#pouchGradient)" stroke="#e79a25" stroke-width="4" stroke-linejoin="round"/>
+
+    <ellipse cx="472" cy="140" rx="35" ry="31" fill="url(#bodyGradient)" stroke="#c6d2e0" stroke-width="5"/>
+    <ellipse cx="486" cy="132" rx="9" ry="10" fill="#ffffff" stroke="#c6d2e0" stroke-width="2"/>
+    <circle cx="488" cy="133" r="4.5" fill="#22303c"/>
+
+    <path d="M348 289 C366 322, 398 350, 430 384" fill="none" stroke="#f08a24" stroke-width="10" stroke-linecap="round"/>
+    <path d="M424 382 L459 377 L456 397 L425 397 Z" fill="#f79d3c" stroke="#d97706" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect y="320" width="600" height="80" fill="#90EE90"/>
+
+  <!-- Bicycle -->
+  <circle cx="150" cy="280" r="60" fill="none" stroke="#333" stroke-width="8"/>
+  <circle cx="150" cy="280" r="55" fill="none" stroke="#666" stroke-width="2"/>
+  <circle cx="450" cy="280" r="60" fill="none" stroke="#333" stroke-width="8"/>
+  <circle cx="450" cy="280" r="55" fill="none" stroke="#666" stroke-width="2"/>
+
+  <line x1="150" y1="225" x2="150" y2="335" stroke="#666" stroke-width="2"/>
+  <line x1="95" y1="280" x2="205" y2="280" stroke="#666" stroke-width="2"/>
+  <line x1="108" y1="235" x2="192" y2="325" stroke="#666" stroke-width="2"/>
+  <line x1="192" y1="235" x2="108" y2="325" stroke="#666" stroke-width="2"/>
+
+  <line x1="450" y1="225" x2="450" y2="335" stroke="#666" stroke-width="2"/>
+  <line x1="395" y1="280" x2="505" y2="280" stroke="#666" stroke-width="2"/>
+  <line x1="408" y1="235" x2="492" y2="325" stroke="#666" stroke-width="2"/>
+  <line x1="492" y1="235" x2="408" y2="325" stroke="#666" stroke-width="2"/>
+
+  <path d="M 450 280 L 380 200 L 150 280" stroke="#FF6347" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 380 200 L 380 150 L 450 140" stroke="#FF6347" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 380 200 L 300 200" stroke="#FF6347" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 300 200 L 280 250" stroke="#FF6347" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <line x1="300" y1="200" x2="300" y2="180" stroke="#FF6347" stroke-width="6" stroke-linecap="round"/>
+
+  <ellipse cx="300" cy="170" rx="35" ry="8" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+
+  <path d="M 450 140 L 450 120 L 470 110" stroke="#FF6347" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <line x1="460" y1="110" x2="480" y2="115" stroke="#FF6347" stroke-width="4" stroke-linecap="round"/>
+
+  <ellipse cx="280" cy="250" rx="15" ry="5" fill="#333" stroke="#111" stroke-width="2"/>
+
+  <!-- Pelican -->
+  <ellipse cx="300" cy="150" rx="45" ry="55" fill="white" stroke="#333" stroke-width="2"/>
+  <ellipse cx="260" cy="145" rx="25" ry="35" fill="#D3D3D3" stroke="#333" stroke-width="2"/>
+  <ellipse cx="340" cy="145" rx="25" ry="35" fill="#D3D3D3" stroke="#333" stroke-width="2"/>
+  <ellipse cx="300" cy="110" rx="18" ry="25" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="300" cy="85" r="28" fill="white" stroke="#333" stroke-width="2"/>
+
+  <path d="M 300 85 Q 260 85 250 95 Q 240 105 250 115 Q 260 125 300 125" fill="#FFA500" stroke="#FF8C00" stroke-width="2"/>
+  <path d="M 275 95 Q 265 105 275 115" fill="none" stroke="#FF8C00" stroke-width="2"/>
+
+  <circle cx="315" cy="82" r="6" fill="white" stroke="#333" stroke-width="1"/>
+  <circle cx="317" cy="82" r="3" fill="#333"/>
+
+  <ellipse cx="270" cy="260" rx="12" ry="6" fill="#FFA500" stroke="#FF8C00" stroke-width="2"/>
+  <ellipse cx="290" cy="260" rx="12" ry="6" fill="#FFA500" stroke="#FF8C00" stroke-width="2"/>
+
+  <!-- Pink helmet -->
+  <ellipse cx="300" cy="75" rx="22" ry="18" fill="#FF1493" stroke="#C71585" stroke-width="2" opacity="0.8"/>
+  <circle cx="300" cy="65" r="3" fill="#C71585"/>
+</svg>

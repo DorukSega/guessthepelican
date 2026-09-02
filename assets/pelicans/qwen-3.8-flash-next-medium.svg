@@ -1,0 +1,112 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Pelican Riding a Bicycle</title>
+
+  <!-- Sky and ground -->
+  <rect width="800" height="600" fill="#eaf6ff"/>
+  <rect y="512" width="800" height="88" fill="#a8d5a2"/>
+  <line x1="0" y1="512" x2="800" y2="512" stroke="#6b8e5a" stroke-width="3"/>
+  <circle cx="690" cy="90" r="45" fill="#ffe9a8"/>
+  <g fill="#ffffff">
+    <ellipse cx="150" cy="80" rx="55" ry="20"/>
+    <ellipse cx="190" cy="60" rx="40" ry="18"/>
+  </g>
+
+  <!-- ====== BICYCLE ====== -->
+  <g stroke-linecap="round">
+    <!-- Wheels -->
+    <g stroke="#444" stroke-width="2">
+      <!-- Rear wheel spokes -->
+      <g>
+        <line x1="250" y1="430" x2="250" y2="350"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(30 250 430)"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(60 250 430)"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(90 250 430)"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(120 250 430)"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(150 250 430)"/>
+        <line x1="250" y1="430" x2="250" y2="350" transform="rotate(165 250 430)"/>
+      </g>
+      <!-- Front wheel spokes -->
+      <g>
+        <line x1="550" y1="430" x2="550" y2="350"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(30 550 430)"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(60 550 430)"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(90 550 430)"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(120 550 430)"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(150 550 430)"/>
+        <line x1="550" y1="430" x2="550" y2="350" transform="rotate(165 550 430)"/>
+      </g>
+    </g>
+    <circle cx="250" cy="430" r="80" fill="none" stroke="#222" stroke-width="8"/>
+    <circle cx="550" cy="430" r="80" fill="none" stroke="#222" stroke-width="8"/>
+    <circle cx="250" cy="430" r="8" fill="#222"/>
+    <circle cx="550" cy="430" r="8" fill="#222"/>
+
+    <!-- Frame -->
+    <g stroke="#e0433a" stroke-width="8" fill="none">
+      <line x1="250" y1="430" x2="340" y2="300"/>   <!-- seat stay -->
+      <line x1="250" y1="430" x2="400" y2="430"/>   <!-- chain stay -->
+      <line x1="400" y1="430" x2="340" y2="298"/>   <!-- seat tube -->
+      <line x1="340" y1="300" x2="510" y2="290"/>   <!-- top tube -->
+      <line x1="510" y1="290" x2="400" y2="430"/>   <!-- down tube -->
+      <line x1="510" y1="290" x2="550" y2="430"/>   <!-- fork -->
+    </g>
+
+    <!-- Handlebar -->
+    <g stroke="#333" stroke-width="6" fill="none">
+      <line x1="510" y1="290" x2="505" y2="260"/>
+      <line x1="505" y1="260" x2="545" y2="255"/>
+    </g>
+
+    <!-- Seat -->
+    <rect x="310" y="288" width="60" height="12" rx="6" fill="#333"/>
+
+    <!-- Crankset and pedals -->
+    <circle cx="400" cy="430" r="16" fill="none" stroke="#555" stroke-width="4"/>
+    <g stroke="#555" stroke-width="5">
+      <line x1="400" y1="430" x2="425" y2="455"/>
+      <line x1="400" y1="430" x2="375" y2="405"/>
+    </g>
+    <rect x="412" y="455" width="26" height="8" rx="3" fill="#222"/>
+    <rect x="362" y="405" width="26" height="8" rx="3" fill="#222"/>
+  </g>
+
+  <!-- ====== PELICAN ====== -->
+  <g>
+    <!-- Legs (webbed feet on pedals) -->
+    <g stroke="#e8a83a" stroke-width="5" fill="none" stroke-linecap="round">
+      <line x1="330" y1="268" x2="375" y2="405"/>
+      <line x1="355" y1="268" x2="425" y2="455"/>
+    </g>
+    <path d="M370 405 L358 412 Q372 418 385 412 Z" fill="#e8a83a"/>
+    <path d="M420 455 L434 460 Q444 466 456 459 L446 452 Z" fill="#e8a83a"/>
+
+    <!-- Body -->
+    <ellipse cx="340" cy="230" rx="60" ry="42" fill="#f5f0e6" stroke="#c9bda6" stroke-width="2"/>
+    <!-- Feather details -->
+    <path d="M285 220 Q310 235 335 225 M290 245 Q315 258 340 248"
+          fill="none" stroke="#c9bda6" stroke-width="2"/>
+
+    <!-- Wing -->
+    <path d="M320 200 Q390 195 400 260 Q355 262 320 200 Z"
+          fill="#d9cbb3" stroke="#a89c85" stroke-width="2"/>
+
+    <!-- Neck and head -->
+    <path d="M385 210 Q400 185 400 165" fill="none" stroke="#f5f0e6" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="402" cy="155" r="20" fill="#f5f0e6" stroke="#c9bda6" stroke-width="2"/>
+
+    <!-- Upper beak -->
+    <path d="M418 150 Q500 158 530 168 Q480 172 420 162 Z"
+          fill="#e8a83a" stroke="#b57f25" stroke-width="2"/>
+    <!-- Throat pouch -->
+    <path d="M420 165 Q470 205 522 166 Q475 178 420 165 Z"
+          fill="#f4c26b" stroke="#b57f25" stroke-width="2"/>
+
+    <!-- Eye -->
+    <circle cx="406" cy="148" r="5" fill="#222"/>
+    <circle cx="408" cy="146" r="1.5" fill="#fff"/>
+  </g>
+
+  <!-- Caption -->
+  <text x="400" y="575" text-anchor="middle" font-family="Georgia, serif"
+        font-size="26" fill="#4a6b3f">Pelican Express — Day 1,247 without a fish.</text>
+</svg>
