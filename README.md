@@ -2,6 +2,8 @@
 
 A static web game built with model-generated artwork from Simon Willison's [pelican-on-a-bicycle LLM benchmark](https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/).
 
+[Play Guess the Pelican](https://doruksega.github.io/guessthepelican/)
+
 Players are shown an AI model name and choose which of three model-generated illustrations matches it. Each game contains 10 randomly selected rounds followed by a bonus round that asks players to match three same-model outputs to their reasoning effort levels. The game also includes streak bonuses, keyboard controls, a locally stored personal best, and a copyable result.
 
 The main playable collection is a curated set of 40 recognizable benchmark outputs. It spans major OpenAI, Anthropic and Google releases; Mistral, xAI and Meta; and Chinese model families from Alibaba (Qwen), DeepSeek, Zhipu AI (GLM), Moonshot AI (Kimi), and Tencent (Hunyuan). Experimental snapshots and near-duplicate size variants are intentionally left out of the main game. Curated effort-level variants for Claude Fable 5.1, Claude Opus 4.8, and Qwen 3.8 Flash Next power the randomized bonus round.
